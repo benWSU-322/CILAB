@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Label new issue as "To Do"
-        uses: CILAB@v1
+        uses: actions/checkout@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           labels: "To Do"
